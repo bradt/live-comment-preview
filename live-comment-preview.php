@@ -59,7 +59,12 @@ function lcp_output_js() {
 		$comment->comment_author = 'COMMENT_AUTHOR';
 		$comment->comment_parent = 0;
 		$comment->comment_date = time();
-		
+		$comment->comment_type = '';
+		$comment->user_id = 0;
+		$comment->comment_author_url = '';
+		$comment->comment_post_ID = 0;
+		$comment->comment_approved = 1;
+
 		$wp_query->comment = $comment;
 		$wp_query->comments = $comments = array($comment);
 		$wp_query->current_comment = -1;
@@ -345,7 +350,7 @@ function lcp_add_preview_div($post_id) {
 	return $post_id;
 }
 
-$livePreviewDivAdded == false;
+$livePreviewDivAdded = false;
 
 if( stristr($_SERVER['REQUEST_URI'], 'live-comment-preview.js') ) {
 	add_action('template_redirect', 'lcp_output_js');
