@@ -24,6 +24,8 @@ responsive, smooth, live comment preview.
 
 [**Contribute on Github**](https://github.com/bradt/live-comment-preview)
 
+Photo credit: [AmUnivers](http://www.flickr.com/photos/amunivers/)
+
 == Installation ==
 
 Use WordPress' built-in plugin installer, or do a manual install:
