@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/live-comment-preview/
 Description: Displays a preview of the user's comment as they type it.
 Author: Brad Touesnard
 Author URI: http://bradt.ca/
-Version: 2.0.1
+Version: 2.0.2
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -112,8 +112,9 @@ function lcp_output_js() {
 				<li id="comment-preview">
 					<img src="' . $avatar_default . '" alt="" class="avatar avatar-' . $avatar_size . '" width="' . $avatar_size . '" height="' . $avatar_size . '"/>
 					<cite>COMMENT_AUTHOR</cite> Says:
-					<br />
+					<div aria-live="polite">
 					COMMENT_CONTENT
+					</div>
 				</li>
 			</ol>';
 	}
