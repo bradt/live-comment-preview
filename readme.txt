@@ -3,8 +3,9 @@ Contributors: bradt
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5VPMGLLK94XJC
 Tags: comment, comments, preview
 Requires at least: 1.5
-Tested up to: 3.2
-Stable tag: 2.0.1
+Tested up to: 3.5
+Stable tag: 2.0.2
+License: GPLv2
 
 Displays a preview of the user's comment as they type it.
 
@@ -21,6 +22,8 @@ appear on the site as they type it.
 Uses client-side Javascript only (no Ajax requests to the server) which means a
 responsive, smooth, live comment preview.
 
+[**Contribute on Github**](https://github.com/bradt/live-comment-preview)
+
 == Installation ==
 
 Use WordPress' built-in plugin installer, or do a manual install:
@@ -34,7 +37,7 @@ Enjoy!
 
 == Screenshots ==
 
-1. Comment preview in WordPress' default theme Twenty Ten
+1. Comment preview in WordPress' default theme Twenty Twelve
 
 == Frequently Asked Questions ==
 
@@ -66,6 +69,11 @@ insert the strings COMMENT_CONTENT, COMMENT_AUTHOR, and AVATAR_URL where you wou
 like the respective content to show up.
 
 == Changelog ==
+
+= 2.0.2 (2012-12-17) =
+* Tested with WordPress 3.5 and Twenty Twelve theme
+* Added aria live region for accessibility. Thanks [Bruce Lawson](http://www.brucelawson.co.uk/) for this!"
+* Cleaned up a bunch of PHP warnings and notices when in debug mode
 
 = 2.0.1 (2011-09-08) =
 * Bug fix: [Doesn't appear the preview in 2.0](http://wordpress.org/support/topic/plugin-live-comment-preview-doesn«t-appear-the-preview-in-20)
