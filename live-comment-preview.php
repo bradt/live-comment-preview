@@ -54,6 +54,10 @@ function lcp_output_js() {
 		
 		$post->comment_status = 'open';
 		
+		if( ! is_object( $comment ) ) {
+			$comment = new stdClass();
+		}
+		
 		$comment->comment_ID = 'lcp';
 		$comment->comment_content = 'COMMENT_CONTENT';
 		$comment->comment_author = 'COMMENT_AUTHOR';
